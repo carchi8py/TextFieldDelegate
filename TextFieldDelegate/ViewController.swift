@@ -46,5 +46,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(false)
     }
 
+    @IBAction func textFieldDidChange(sender: AnyObject) {
+        saveLogic()
+    }
 }
 
