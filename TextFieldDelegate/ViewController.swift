@@ -28,6 +28,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func buttonPressed(sender: AnyObject) {
         
         saveLogic()
+        dissmissKeyboard()
     }
     
     func saveLogic() {
@@ -37,7 +38,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         saveLogic()
+        dissmissKeyboard()
         return true
+    }
+    
+    func dissmissKeyboard() {
+        view.endEditing(false)
     }
 
 }
