@@ -28,6 +28,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6rg-dI-W42"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AnA-G7-Cwf">
                                 <rect key="frame" x="16" y="73" width="568" height="30"/>
@@ -46,6 +49,9 @@
                             <constraint firstItem="AnA-G7-Cwf" firstAttribute="top" secondItem="dUb-zz-cYr" secondAttribute="bottom" constant="24" id="yPV-be-JvV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="AnA-G7-Cwf" id="w5u-56-qgu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
